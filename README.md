@@ -47,3 +47,21 @@ You can change transition by changing the reveal transition property in Reveal.i
   				transition:  'default', // default/cube/page/concave/zoom/linear/none
   			});
 ```
+
+## Get Your Slides Running
+
+This repo contains a submodule for the GDI version of the
+[Reveal.js](http://lab.hakim.se/reveal-js/#/5)
+framework. You will need to clone this repo, and then initialize the
+reveal submodule and fetch its contents with the following three
+terminal commands.
+```
+git clone git@github.com:gdidenver/gdi-denver-intro-html-css.git
+git submodule init
+git submodule update
+```
+Now from your terminal, in the gdi-denver-intro-html-css directory, open
+the index page in your browser:
+```
+open index.html
+```
