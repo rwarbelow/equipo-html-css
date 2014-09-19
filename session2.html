@@ -97,6 +97,44 @@
             <li>Block elements: p, h1, ul, li, almost everything else</li>
           </ul>
         </section>
+            <section>
+        <!-- CSS Reset vs. Normalize-->
+              <h3>CSS Reset</h3>
+              <ul>
+                <li>The browser has a set of pre-defined styles for each element.</li>
+                <li>A CSS Reset removes ALL styles from componenents so they are stripped down to nothing</li>
+                <li>To have more control over each element's styles, use a CSS reset.</li>
+              </ul>
+              <div class="left" style="width: 45%;">
+                <p class="blue">Without CSS Reset</p>
+                <img src="images/without-reset.png"/>
+              </div>
+              <div class="right" style="width: 45%;">
+                <p class="green">With CSS Reset</p>
+                <img src="images/with-reset.png"/>
+              </div>
+            </section>
+         <section>
+              <h3>Use a CSS Reset file</h3>
+              <p>Eric Meyer has created a basic reset that you can copy int your pre-existing CSS file.</p>
+              <p><a href="http://meyerweb.com/eric/tools/css/reset/" target="blank">meyerweb.com/eric/tools/css/reset/</a></p>
+              <br/>
+        </section>
+         <section>
+              <h3>Normalize</h3>
+              <ul>
+                <li>Different browsers will handle styles differently.</li>
+                <li>CSS Normalize attempts to make all browsers render elements in the same visual way.</li>
+                <li>CSS Normalize does NOT remove all styles. It tries to be efficient by preserving styles that may be needed instead of just resetting everything</li>
+                <li>You can get a normalize file here: <a href="http://meyerweb.com/eric/tools/css/reset/" target="blank">necolas/normalize.css</a></li>
+              </ul>
+        </section>
+       <section>
+          <h3>Let's develop it!</h3>
+          <p>Add a CSS reset or Normalize file to your project</p>
+      </section>
+
+  <!-- Div Section-->
         <section>
         	<h3>Element: Div</h3>
         		<ul>
@@ -360,39 +398,6 @@ padding: 10px 5px 3px 5px;
 				<p>Use IDs to target each div with CSS</p>
 			</div>
 		</section>
-    <section>
-      <h3>CSS Reset</h3>
-      <p>The browser has a set of pre-defined styles for each element.</p>
-      <p>To have more control over each element's styles, use a CSS reset.</p>
-      <div class="left" style="width: 45%;">
-        <p class="blue">Without CSS Reset</p>
-        <img src="images/without-reset.png"/>
-      </div>
-      <div class="right" style="width: 45%;">
-        <p class="green">With CSS Reset</p>
-        <img src="images/with-reset.png"/>
-      </div>
-    </section>
-    <section>
-      <h3>Use a CSS Reset file</h3>
-      <p>Eric Meyer has created a basic reset that you can copy int your pre-existing CSS file.</p>
-      <p><a href="http://meyerweb.com/eric/tools/css/reset/">meyerweb.com/eric/tools/css/reset/</a></p>
-      <br/>
-      <p>Basic Reset for today:</p>
-<pre><code>html, body, div, span, h1, h2, h3, h4, h5, h6,
-p, a, em, strong, ol, ul, li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-ol, ul {
-  list-style: none;
-}</code></pre>
-</section>
-<section>
-  <h3>Let's develop it!</h3>
-  <p>Add a CSS reset to the top of your CSS file to see what happens!</p>
-</section>
         <section>
          <h3>Static Positioning</h3>
          <div class = "left-align">
@@ -566,7 +571,7 @@ ol, ul {
          <div class = "left-align">
             <ul>
             <li>"Floating" an element takes it in the normal flow, as far to the left or right of it's containing element as possible.</li>
-            <li>Any other elements, such as paragraphs or lists, will wrap around the floated element.</li>
+            <li>Any other elements, such as paragraphs or lists, will wrap around the floated element.(it was originally intended only for magazine style text wrapping)</li>
             <li>Always specify a width when floating an element, otherwise the element is likely to take up the whole page and not appear floated.</li>
             <li>You can specify a) whether an element is floated or not, and b) which side it ﬂoats on.</li>
             </ul>
@@ -638,10 +643,38 @@ ol, ul {
          <div class = "left-align" style="clear: left;">Non-floating element with a class of <strong>.clear-left</strong></div>
         </section>
 
+
+        <!-- Display: Inline-Block-->
+        <section>
+          <h3>Display: Inline-Block</h3>
+          <ul>
+            <li>Usually a better choice when making LAYOUT decisions.</li>
+            <li>You don't have to mess with all that clearfix jazz.</li>
+            <li>It will work for most of what you need, and modern browsers support it well.</li>
+            <li>Great post that details pros/cons/history of float vs. inline-block: <a href="http://www.sitepoint.com/give-floats-the-flick-in-css-layouts/" target="blank">Give Floats the Flick in CSS Layouts</a>
+          </ul>
+         <pre><code class ="html">
+              .li {
+                display: inline-block;
+              }
+         </code></pre>
+        </section>
+       <section>
+         <h3>Clearfix is Not the Same, but Super Handy Too</h3>
+
+ <pre><code class ="html">
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+ </code></pre>
+        </section>
+
         <!-- Exercise-->
        <section>
          <h3>Let's Develop It</h3>
-         <p>Let's float our side bar and content areas.</p>
+         <p>Let's play with float and inline-block in our side bar and content areas, but really, just use inline-block.</p>
        </section>
 			<!-- Pseudo class-->
 			<section>
