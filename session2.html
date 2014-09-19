@@ -159,7 +159,7 @@
           <h3>Grouping elements with div</h3>
           <div class = "left-align">
           <ul>
-          <li>The div tag is used everywhere to group elements together into sections.</li>
+          <li>The div tag is used to group elements together into sections.</li>
           <li>For example, what if we want the first 2 paragraphs of a section to be right-aligned, purple & bold, but we don't want any other paragraphs to be right-aligned?</li>
           <li>We would wrap them in a div element to style them differently.</li>
           </ul>
@@ -643,6 +643,22 @@ padding: 10px 5px 3px 5px;
          <div class = "left-align" style="clear: left;">Non-floating element with a class of <strong>.clear-left</strong></div>
         </section>
 
+       <section>
+         <h3>Clearfix is Not the Same, but Super Handy Too</h3>
+         <ul>
+           <li>Use this on a container that has several floaters in it</li>
+           <li>When you stack multiple floats in a container, they cause the parent container to collapse</li>
+           <li>This can cause all kinds of headaches later when you are trying to position something based on the height (which no longer exists) of that parent container</li>
+         </ul>
+
+           <pre><code class ="html">
+                .clearfix:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+           </code></pre>
+        </section>
 
         <!-- Display: Inline-Block-->
         <section>
@@ -659,18 +675,6 @@ padding: 10px 5px 3px 5px;
               }
          </code></pre>
         </section>
-       <section>
-         <h3>Clearfix is Not the Same, but Super Handy Too</h3>
-
- <pre><code class ="html">
-      .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
- </code></pre>
-        </section>
-
         <!-- Exercise-->
        <section>
          <h3>Let's Develop It</h3>
