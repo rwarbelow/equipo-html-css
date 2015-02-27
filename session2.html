@@ -44,27 +44,68 @@
           <h4>Session 2</h4>
         </section>
 
-        <!-- Welcome-->
-       <!--  <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
-          </div>
-        </section> -->
-
          <section>
-        	<h3>What we'll be making today</h3>
-          <p>Site with header, footer, sidebar and a content area. <a href="http://gdidenver.github.io/gdi-denver-intro-html-css/image-links.html" target="blank">images</a></p>
-            <img src="images/session2site.png" style="float: left">
+        	<h3>Move From A to B</h3>
+            <!-- <a href="http://gdidenver.github.io/gdi-denver-intro-html-css/image-links.html" target="blank">images</a> -->
+            <img src="images/session2a-site.png" style="float: left">
             <img src="images/session2b-site.png" style="float: right">
         </section>
+        <section>
+          <img src = "images/monster-1.png">
+          <h3>Block One</h3>
+        </section>
+        <section>
+          <h3>Setup for Today</h3>
+          <pre><code class = "html">
+            &lt;!DOCTYPE html>
+            &lt;html>
+              &lt;head>
+                &lt;meta charset="UTF-8">
+                &lt;title>Day Two Practice&lt;/title>
+              &lt;/head>
+
+              &lt;body>
+              <!-- We are going to put a lot of fun stuff in here! -->
+              &lt;/body>
+          </code></pre>
+
+        </section>
+        <section>
+    <!-- CSS Reset vs. Normalize-->
+          <h3>CSS Reset</h3>
+          <ul>
+            <li>The browser has a set of pre-defined styles for each element.</li>
+            <li>A CSS Reset removes ALL styles from componenents so they are stripped down to nothing</li>
+            <li>To have more control over each element's styles, use a CSS reset.</li>
+          </ul>
+          <div class="left" style="width: 45%;">
+            <p class="blue">Without CSS Reset</p>
+            <img src="images/without-reset.png"/>
+          </div>
+          <div class="right" style="width: 45%;">
+            <p class="green">With CSS Reset</p>
+            <img src="images/with-reset.png"/>
+          </div>
+        </section>
+     <section>
+          <h3>Use a CSS Reset file</h3>
+          <p>Eric Meyer has created a basic reset that you can copy int your pre-existing CSS file.</p>
+          <p><a href="http://meyerweb.com/eric/tools/css/reset/" target="blank">meyerweb.com/eric/tools/css/reset/</a></p>
+          <br/>
+    </section>
+     <section>
+          <h3>Another Option: Normalize</h3>
+          <ul>
+            <li>Different browsers will handle styles differently.</li>
+            <li>CSS Normalize attempts to make all browsers render elements in the same visual way.</li>
+            <li>CSS Normalize does NOT remove all styles. It tries to be efficient by preserving styles that may be needed instead of just resetting everything</li>
+            <li>You can get a normalize file here: <a href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" target="blank">necolas/normalize.css</a></li>
+          </ul>
+    </section>
+   <section>
+      <h3>Let's develop it!</h3>
+      <p>Add a CSS reset or Normalize file to your project</p>
+  </section>
 
         <!-- Inline vs. block-->
         <section>
@@ -94,42 +135,6 @@
             <li>Block elements: p, h1, ul, li, almost everything else</li>
           </ul>
         </section>
-            <section>
-        <!-- CSS Reset vs. Normalize-->
-              <h3>CSS Reset</h3>
-              <ul>
-                <li>The browser has a set of pre-defined styles for each element.</li>
-                <li>A CSS Reset removes ALL styles from componenents so they are stripped down to nothing</li>
-                <li>To have more control over each element's styles, use a CSS reset.</li>
-              </ul>
-              <div class="left" style="width: 45%;">
-                <p class="blue">Without CSS Reset</p>
-                <img src="images/without-reset.png"/>
-              </div>
-              <div class="right" style="width: 45%;">
-                <p class="green">With CSS Reset</p>
-                <img src="images/with-reset.png"/>
-              </div>
-            </section>
-         <section>
-              <h3>Use a CSS Reset file</h3>
-              <p>Eric Meyer has created a basic reset that you can copy int your pre-existing CSS file.</p>
-              <p><a href="http://meyerweb.com/eric/tools/css/reset/" target="blank">meyerweb.com/eric/tools/css/reset/</a></p>
-              <br/>
-        </section>
-         <section>
-              <h3>Normalize</h3>
-              <ul>
-                <li>Different browsers will handle styles differently.</li>
-                <li>CSS Normalize attempts to make all browsers render elements in the same visual way.</li>
-                <li>CSS Normalize does NOT remove all styles. It tries to be efficient by preserving styles that may be needed instead of just resetting everything</li>
-                <li>You can get a normalize file here: <a href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" target="blank">necolas/normalize.css</a></li>
-              </ul>
-        </section>
-       <section>
-          <h3>Let's develop it!</h3>
-          <p>Add a CSS reset or Normalize file to your project</p>
-      </section>
 
   <!-- Div Section-->
         <section>
@@ -234,6 +239,10 @@
          <section>
           <h3>Let's Develop It</h3>
          <p>Let's add some spans to our content to help highlight some text. </p>
+        </section>
+        <section>
+          <img src = "images/monster-2.png">
+          <h3>Block Two</h3>
         </section>
 
         <!-- Box model-->
@@ -390,10 +399,8 @@ padding: 10px 5px 3px 5px;
 		<!-- Exercise -->
 		<section>
 			<h3>Let's develop it!</h3>
-			<div class="left-align">
 				<p>Add a width &amp; height to our divs.</p>
 				<p>Use IDs to target each div with CSS</p>
-			</div>
 		</section>
         <section>
          <h3>Static Positioning</h3>
@@ -677,6 +684,10 @@ padding: 10px 5px 3px 5px;
          <h3>Let's Develop It</h3>
          <p>Let's play with float and inline-block in our side bar and content areas, but really, just use inline-block.</p>
        </section>
+        <section>
+          <img src = "images/monster-3.png">
+          <h3>Block Three</h3>
+        </section>
 			<!-- Pseudo class-->
 			<section>
 				<h3>Pseudo-classes, more CSS for links</h3>
