@@ -60,7 +60,7 @@
         </section>
         <section>
           <img src = "images/monster-1.png">
-          <h3>Block One</h3>
+          <h3>Block 1</h3>
         </section>
         <section>
           <h3>Setup for Today</h3>
@@ -70,16 +70,28 @@
             <li>don't forget to hook them up!</li>
           </ul>
           <pre><code class = "html">
-            &lt;!DOCTYPE html>
+            &lt;!doctype html>
             &lt;html>
               &lt;head>
                 &lt;meta charset="UTF-8">
                 &lt;title>Day Two Practice&lt;/title>
+                <!-- something goes here... -->
               &lt;/head>
 
               &lt;body>
-              <!-- We are going to put a lot of fun stuff in here! -->
+                &lt;h1>Heading(h1)&lt;/h1>
+                &lt;h2>Heading(h2)&lt;/h2>
+                &lt;h3>Heading(h3)&lt;/h3>
+
+                &lt;p>Unordered list of items:&lt;/p>
+                  &lt;ul>
+                    &lt;li>List Item 1&lt;/li>
+                    &lt;li>List Item 2&lt;/li>
+                    &lt;li>List Item 3&lt;/li>
+                  &lt;/ul>
+                &lt;p>My awesome paragraph is &lt;strong>STRONG&lt;/strong>with &lt;em>EMPHASIS&lt;/em>.
               &lt;/body>
+            &lt;/html>
           </code></pre>
 
         </section>
@@ -117,33 +129,14 @@
     </section>
    <section>
       <h3>Let's develop it!</h3>
-      <p>First, let's add some content in the body of your practice html</p>
-      <pre><code class="html">
-      &lt;!DOCTYPE html>
-      &lt;html>
-        &lt;head>
-          &lt;meta charset="UTF-8">
-          &lt;title>Day Two Practice&lt;/title>
-        &lt;/head>
-        &lt;body>
-          &lt;h1>Heading 1&lt;/h1>
-          &lt;h2>Heading 1&lt;/h2>
-          &lt;h3>Heading 1&lt;/h3>
-          &lt;h4>Heading 1&lt;/h4>
-          &lt;h5>Heading 1&lt;/h5>
-          &lt;h6>Heading 1&lt;/h6>
-          &lt;p>My List&lt;/p>
-            &lt;ul>
-              &lt;li>Item 1&lt;/li>
-              &lt;li>Item 2&lt;/li>
-              &lt;li>Item 3&lt;/li>
-            &lt;/ul>
-        &lt;/body>
-      </pre></code>
-      <p>Now, how would you add CSS reset or Normalize file?</p>
+      <p>Create a reset.css file and a normalize.css file. Experiment with adding each to your practice.html file. Choose one to keep in your file.</p>
   </section>
 
         <!-- Inline vs. block-->
+        <section>
+          <img src = "images/monster-2.png">
+          <h3>Block 2</h3>
+        </section>
         <section>
           <h3>Inline vs Block</h3>
           <div class = "left" style="width: 50%; text-align: left;">
@@ -171,6 +164,10 @@
             <li>Block elements: p, h1, ul, li, almost everything else</li>
           </ul>
         </section>
+        <section>
+          <img src = "images/monster-3.png">
+          <h3>Block 3</h3>
+        </section>
 
   <!-- Div Section-->
         <section>
@@ -179,13 +176,12 @@
 	        		<li>Block level element. Each new div is rendered on a new line.</li>
 	        		<li>A division, or section of content within an HTML page.</li>
 	        		<li>Used to group elements to format them with CSS.</li>
-	        		<li>Apply IDs and Classes to divs to control their styles with CSS.</li>
         		</ul>
 <pre><code>&lt;div>
    &lt;p>Content&lt;p>
    &lt;p>Content&lt;p>
 &lt;/div></code></pre>
-<pre><code>&lt;div id="header">
+<pre><code>&lt;div class="header">
    &lt;h1>Main Heading&lt;h1>
 &lt;/div></code></pre>
 <pre><code>&lt;div class="sub-content">
@@ -277,8 +273,8 @@
          <p>Let's add some spans to our content to help highlight some text. </p>
         </section>
         <section>
-          <img src = "images/monster-2.png">
-          <h3>Block Two</h3>
+          <img src = "images/monster-4.png">
+          <h3>Block 4</h3>
         </section>
 
         <!-- Box model-->
@@ -286,6 +282,23 @@
           <h3>Box Model</h3>
           <img src ="images/box-model.png"/>
         </section>
+        <!-- Width-->
+		<section>
+			<h3>Property: Width</h3>
+			<p>Sets the width of an element.</p>
+			<p>Does not include padding or borders, remember these add to the width.</p>
+		</section>
+		<!-- height-->
+		<section>
+			<h3>Property: Height</h3>
+			<p>Sets the height of an element.</p>
+			<p>Does not include padding or borders, remember these add to the width.</p>
+		</section>
+		<!-- Exercise -->
+		<section>
+			<h3>Let's develop it!</h3>
+				<p>Add a width &amp; height to our divs.</p>
+		</section>
 
         <!-- Padding -->
         <section>
@@ -420,24 +433,10 @@ padding: 10px 5px 3px 5px;
 			<p>Let's add some padding, borders, and margins to our divs.</p>
 			<p>Let's center our entire document in the browser.</p>
 		</section>
-        <!-- Width-->
-		<section>
-			<h3>Property: Width</h3>
-			<p>Sets the width of an element.</p>
-			<p>Does not include padding or borders, remember these add to the width.</p>
-		</section>
-		<!-- height-->
-		<section>
-			<h3>Property: Height</h3>
-			<p>Sets the height of an element.</p>
-			<p>Does not include padding or borders, remember these add to the width.</p>
-		</section>
-		<!-- Exercise -->
-		<section>
-			<h3>Let's develop it!</h3>
-				<p>Add a width &amp; height to our divs.</p>
-				<p>Use IDs to target each div with CSS</p>
-		</section>
+        <section>
+          <img src = "images/monster-5.png">
+          <h3>Block 5</h3>
+        </section>
         <section>
          <h3>Static Positioning</h3>
          <div class = "left-align">
@@ -483,6 +482,10 @@ padding: 10px 5px 3px 5px;
           <p>Hi there!</p>
         </div>
       </section>
+        <section>
+          <img src = "images/monster-6.png">
+          <h3>Block 6</h3>
+        </section>
 
        <!-- Relative Positioning-->
        <section>
@@ -606,6 +609,10 @@ padding: 10px 5px 3px 5px;
 
        </section>
        <!-- Float-->
+        <section>
+          <img src = "images/monster-7.png">
+          <h3>Block 7</h3>
+        </section>
        <section>
          <h3>Float</h3>
          <div class = "left-align">
@@ -643,69 +650,68 @@ padding: 10px 5px 3px 5px;
 
        <section>
        <h3>Using floats to place elements side by side</h3>
-       <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
+       <p>If you want two <strong>block</strong> level elements to be side by side, you need to float both elements. One left, and one right.</p>
        <img src="images/example-float-column.png" />
        </section>
        <!-- Clear-->
-       <section>
-         <h3>Clear</h3>
-         <ul>
-         <li>Clearing tells the element on which side (right, left, both) other elements <strong>cannot</strong> appear. </li>
-         <li>If you had an image floated left, and you did not want the paragraph to appear next to it, you would add <strong>clear: left;</strong> to the paragraph.</li>
-         <li>Clearing both sides makes sure ﬂoats don’t ﬂow past the clear element.</li>
-         </ul>
-<pre><code class = "html">
-  clear: right;
-  clear: left;
-  clear: both;
-</code></pre>
-       </section>
+       <!-- <section> -->
+         <!-- <h3>Clear</h3> -->
+         <!-- <ul> -->
+         <!-- <li>Clearing tells the element on which side (right, left, both) other elements <strong>cannot</strong> appear. </li> -->
+         <!-- <li>If you had an image floated left, and you did not want the paragraph to appear next to it, you would add <strong>clear: left;</strong> to the paragraph.</li> -->
+         <!-- <li>Clearing both sides makes sure ﬂoats don’t ﬂow past the clear element.</li> -->
+         <!-- </ul> -->
+<!-- <pre><code class = "html"> -->
+  <!-- clear: right; -->
+  <!-- clear: left; -->
+  <!-- clear: both; -->
+<!-- </code></pre> -->
+       <!-- </section> -->
 
-       <section>
-          <h3>Clear</h3>
- <pre><code class ="html">
-   .float{
-     float:left;
-     width:50px;
-     background:yellow;
-   }
-   .clear-left{
-     clear:left
-   }
- </code></pre>
-         <div style ="float:left;width:50px;background:yellow; color:black; ">
-           hi<br/>
-           hi<br/>
-           hi<br/>
-         </div>
-         <div class = "left-align">Not floating element</div>
-         <div class = "left-align">Not floating element</div>
-         <div class = "left-align" style="clear: left;">Non-floating element with a class of <strong>.clear-left</strong></div>
-        </section>
+       <!-- <section> -->
+          <!-- <h3>Clear</h3> -->
+ <!-- <pre><code class ="html"> -->
+   <!-- .float{ -->
+     <!-- float:left; -->
+     <!-- width:50px; -->
+     <!-- background:yellow; -->
+   <!-- } -->
+   <!-- .clear-left{ -->
+     <!-- clear:left -->
+   <!-- } -->
+ <!-- </code></pre> -->
+         <!-- <div style ="float:left;width:50px;background:yellow; color:black; "> -->
+           <!-- hi<br/> -->
+           <!-- hi<br/> -->
+           <!-- hi<br/> -->
+         <!-- </div> -->
+         <!-- <div class = "left-align">Not floating element</div> -->
+         <!-- <div class = "left-align">Not floating element</div> -->
+         <!-- <div class = "left-align" style="clear: left;">Non-floating element with a class of <strong>.clear-left</strong></div> -->
+        <!-- </section> -->
 
-       <section>
-         <h3>Clearfix is Not the Same, but Super Handy Too</h3>
-         <ul>
-           <li>Use this on a container that has several floaters in it</li>
-           <li>When you stack multiple floats in a container, they cause the parent container to collapse</li>
-           <li>This can cause all kinds of headaches later when you are trying to position something based on the height (which no longer exists) of that parent container</li>
-         </ul>
+       <!-- <section> -->
+         <!-- <h3>Clearfix is Not the Same, but Super Handy Too</h3> -->
+         <!-- <ul> -->
+           <!-- <li>Use this on a container that has several floaters in it</li> -->
+           <!-- <li>When you stack multiple floats in a container, they cause the parent container to collapse</li> -->
+           <!-- <li>This can cause all kinds of headaches later when you are trying to position something based on the height (which no longer exists) of that parent container</li> -->
+         <!-- </ul> -->
 
-           <pre><code class ="html">
-                .clearfix:after {
-                  content: "";
-                  display: table;
-                  clear: both;
-                }
-           </code></pre>
-        </section>
+           <!-- <pre><code class ="html"> -->
+                <!-- .clearfix:after { -->
+                  <!-- content: ""; -->
+                  <!-- display: table; -->
+                  <!-- clear: both; -->
+                <!-- } -->
+           <!-- </code></pre> -->
+        <!-- </section> -->
 
         <!-- Display: Inline-Block-->
         <section>
           <h3>Display: Inline-Block</h3>
           <ul>
             <li>Usually a better choice when making LAYOUT decisions.</li>
-            <li>You don't have to mess with all that clearfix jazz.</li>
             <li>It will work for most of what you need, and modern browsers support it well.</li>
             <li>Great post that details pros/cons/history of float vs. inline-block: <a href="http://www.sitepoint.com/give-floats-the-flick-in-css-layouts/" target="blank">Give Floats the Flick in CSS Layouts</a>
           </ul>
@@ -718,21 +724,16 @@ padding: 10px 5px 3px 5px;
         <!-- Exercise-->
        <section>
          <h3>Let's Develop It</h3>
-         <p>Let's play with float and inline-block in our side bar and content areas, but really, just use inline-block.</p>
+         <p>Let's play with float and inline-block.</p>
        </section>
         <section>
-          <img src = "images/monster-3.png">
-          <h3>Block Three</h3>
+          <img src = "images/monster-8.png">
+          <h3>Block 8</h3>
         </section>
 			<!-- Pseudo class-->
 			<section>
-				<h3>Pseudo-classes, more CSS for links</h3>
-				<div class ="left left-align" style="width:50%">
-				<p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
-				<br/>
-				<p>CSS pseudo-classes are used to add special effects to some selectors.</p>
-				</div>
-				Syntax:
+				<h3>Pseudo-classes</h3>
+        <p>A pseudo-class is a keyword added to selectors to specify a special state of the selected element.</p>
 <pre><code class ="html">
 selector:pseudo-class
 {
@@ -750,14 +751,13 @@ text-decoration: none;
 
 			<!-- Pseudo class-->
 			<section>
-				<h3>Pseudo-classes, more CSS for links</h3>
+				<h3>Pseudo-classes</h3>
 <pre><code class ="html">
 a:link	{color:#FF0000;} /* unvisited link */
-a:visited	{color:#00FF00;} /* visited link */
 a:hover	{color:#FF00FF;} /* mouse over link */
 a:active	{color:#0000FF;} /* selected link */
 </code></pre>
-				<p>Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!</p>
+				<p>Note: a:hover MUST come after a:link in the CSS definition in order to be effective!</p>
 				<p>Note: a:active MUST come after a:hover in the CSS definition in order to be effective!</p>
 			</section>
 
