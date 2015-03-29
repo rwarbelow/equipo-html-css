@@ -129,7 +129,8 @@
     </section>
    <section>
       <h3>Let's develop it!</h3>
-      <p>Create a reset.css file and a normalize.css file. Experiment with adding each to your practice.html file. Choose one to keep in your file.</p>
+      <p>Create a reset.css file and a normalize.css file. Experiment with adding each to your practice.html file. Choose one to keep in your file. Make sure normalize or reset are listed FIRST, 
+        BEFORE your custom css file(s), else normalize or reset will cause override/conflict with styles you are trying to set.</p>
   </section>
 
         <!-- Inline vs. block-->
@@ -601,6 +602,11 @@ padding: 10px 5px 3px 5px;
           background-color: yellow; color:black"> Bottom </div>
         <div style="position: absolute; bottom: -15px; left:60px;
           background-color: green; z-index: 2; "> Top </div>
+       </section>
+       <section>
+       <h3>Z-index</h3>
+         <p class="left-align">Without any z-index value, elements stack in the order they appear in your markup.</p>
+         <p class="left-align">Elements with non-static positioning (relative/absolute/fixed) will always appear on top of elements with default static positioning.</p>
        </section>
        <section>
         <h3>Let's Develop it!</h3>
