@@ -101,44 +101,10 @@
             <li class = "fragment">Invented by Tim Berners-Lee</li>
             <li class = "fragment">Created "hypertext" to share scientific papers</li>
             <li class = "fragment">First web page August 6, 1991</li>
-            <li class = "fragment">Standardized by w3 Consortium</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>History of HTML</h3>
-          <ul>
-            <li class = "fragment"><span class = "yellow">H</span>yper<span class = "yellow">T</span>ext <span class = "yellow">M</span>arkup <span class = "yellow">L</span>anguage</li>
-            <li class = "fragment">Early 90s</li>
-            <li class = "fragment">HTML 4 in 1997</li>
-            <li class = "fragment">XHTML in 2000</li>
-            <li class = "fragment">HTML 5 in 2008</li>
           </ul>
         </section>
 
         <!-- Terms-->
-        <section>
-         <h3>Terms</h3>
-         <ul>
-           <li>
-            <div class = "green">Web design</div>
-            <div>The process of planning, structuring and creating a website</div>
-           </li>
-           <li>
-            <div class = "green">Web development</div>
-            <div>The process of programming dynamic web applications</div>
-           </li>
-           <li>
-            <div class = "green">Front end</div>
-            <div>The outwardly visible elements of a website or application</div>
-           </li>
-           <li>
-            <div class = "green">Back end</div>
-            <div>The inner workings and functionality of a website or application.</div>
-           </li>
-         </ul>
-        </section>
-
         <!-- Nitty gritty 1 - Clients and servers -->
         <!-- <section>
           <h3>Clients and servers</h3>
@@ -313,31 +279,6 @@
 		</section>
 
         <!-- HTML Page-->
-        <section>
-        <h3>Doctype</h3>
-        <p>The ﬁrst thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
-        <pre><code class = "html">
-          &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
-          4.01 Transitional//EN" "http://
-          www.w3.org/TR/html4/loose.dtd">
-        </code></pre>
-        <pre><code class = "html">
-          &lt;!DOCTYPE html>
-        </code></pre>
-        <p><small>* The doctype is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
-        </section>
-
-        <section>
-          <h3>HTML Tag</h3>
-          <p>After &lt;doctype>, the page content must be
-          contained between &lt;html> tags.</p>
-          <pre><code class = "html">
-            &lt;!DOCTYPE html>
-            &lt;html>
-
-            &lt;/html>
-          </code></pre>
-        </section>
 
         <section>
           <h3>Head and Body Tags</h3>
@@ -369,7 +310,7 @@
         <!-- Develop it -->
         <section class="hide-pdf">
         	<h3>Let's develop it!</h3>
-        	<p>Let's get our web page set up with a doctype, head, title and body.</p>
+        	<p>Let's get our codepen set up with a head, title and body.</p>
         	<p>Later we'll add some content to it!</p>
         </section>
         <!-- Nesting-->
@@ -524,43 +465,14 @@
           <p><small>Link opens in a new window/tab with <strong>target="blank"</strong></small></p>
           <a href="https://www.girldevelopit.com/" target="blank">GDI Home Page</a>
         	<!-- Change email to fit your chapter's needs-->
-        	<pre><code>
-&lt;a href="mailto:info@girldevelopit.com">E-mail us!&lt;/a>
-        	</code></pre>
-        	<p><small>Link opens mail program by inserting <strong>mailto:</strong> directly before the email address.</small></p>
-          <a href="mailto:GDI@example.com">Email Us!</a>
 
         </section>
         <!-- relative & absolute links -->
-        <section>
-        	<h3>Relative vs. Absolute paths for links & images</h3>
-        	<ul>
-        		<li>
-        		<strong class="blue">Relative</strong>
-        			<ul>
-        				<li>Relative paths change depending upon the page the link is on.
-        					<ul>
-        						<li><small>Links within the same directory need no path information. <code class="blue">"filename.jpg"</code></small></li>
-        						<li><small>Subdirectories are listed without preceding slashes. <code class="blue">"images/filename.jpg"</code></small></li>
-        					</ul>
-        				</li>
-        			</ul>
-        		</li>
-        		<li>
-        			<strong class="blue">Absolute</strong>
-    				<ul>
-    					<li>Absolute paths refer to a specific location of a file, including the domain. <small><code class="blue">"http://www.girldevelopit.com/chapters/detroit"</code></small></li>
-    					</li>
-    					<li>Typically used when pointing to a link that is not within your own domain.</li>
-    				</ul>
-        		</li>
-        	</ul>
-        </section>
         <!-- Lets develop it-->
         <section class="hide-pdf">
         	<h3>Let's Develop It</h3>
         	<p>Let's add links to our site!</p>
-        	<p>Add links that open in the same window, a new window and link to an e-mail address.</p>
+        	<p>Add links that open in the same window and a new window.</p>
         </section>
 
         <!-- Images-->
@@ -586,10 +498,10 @@
           <div class = "left" style = "width:50%">
 <pre><code>
 &lt;p>
-  Imagine there's no Heaven &lt;br/>
+  Imagine there's no Ice Cream &lt;br/>
   It's easy if you try &lt;br/>
-  No hell below us  &lt;br/>
-  Above us only sky
+  But sad for all of us  &lt;br/>
+  And hardly worth the time 
 &lt;/p>
 </code></pre>
           </div>
@@ -1038,63 +950,17 @@ p {
         </section>
 
         <!-- Connecting HTML to CSS-->
-        <section>
-          <h3>Connecting CSS to HTML</h3>
-          <p class = "green">3 ways</p>
-          <p>"Inline"</p>
-          <p>"Embedded"</p>
-          <p>"External"</p>
-        </section>
 
         <!-- Inline -->
-        <section>
-          <h3>Connecting CSS to HTML: Inline</h3>
-<pre><code class = "html">
-  &lt;p style="color:red">Some text.&lt;/p>
-</code></pre>
-          <p>Uses the HTML attribute style.</p>
-          <p>Difficult to use in large projects</p>
-          <p>Not preferred.</p>
-        </section>
 
         <!-- Embedded -->
-        <section>
-          <h3>Connecting CSS to HTML: Embedded</h3>
-<pre><code class = "html">
-&lt;head>
-  &lt;style type="text/css">
-    p {
-      color: blue;
-      font-size: 12px;
-    }
-  &lt;/style>
-&lt;/head>
-</code></pre>
-          <p>Inside &lt;head> element.</p>
-          <p>Uses &lt;style> tag.</p>
-          <p>Can only be used in one html file</p>
-        </section>
 
         <!-- External-->
-        <section>
-          <h3>Connecting CSS to HTML: Linked</h3>
-<pre><code class = "html">
-&lt;head>
-  &lt;link rel="stylesheet" type="text/css" href="style.css">
-&lt;/head>
-</code></pre>
-          <p>Shared resource for several pages.</p>
-          <p>Reduced ﬁle size &amp; bandwidth</p>
-          <p>Easy to maintain in larger projects.</p>
-          <p>Preferred by programmers everywhere!</p>
-        </section>
 
         <!-- Exercise-->
         <section class="hide-pdf">
           <h3>Let's develop it</h3>
           <ul>
-            <li>Create a new .css file</li>
-            <li>Add a link to the file in the head of the portfolio made last time</li>
             <li>Add styles to change the colors, background colors or fonts for different parts of your website</li>
             <li>Try using ids and classes to change specific elements</li>
           </ul>
