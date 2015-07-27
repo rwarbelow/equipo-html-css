@@ -30,6 +30,7 @@ Box model? Floating? Columns? What is this sorcery? You've brought people throug
 ## Theme customization
 
 You can change theme colors by changing the theme css to any of the following options:
+
 ```html
   <link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
   <link rel="stylesheet" href="css/theme/gdilight.css" id="theme">
@@ -37,11 +38,13 @@ You can change theme colors by changing the theme css to any of the following op
   <link rel="stylesheet" href="css/theme/gdicool.css" id="theme">
 ```
 You can change the text editor theme by changing the highlight.js css to the following options:
+
 ```html
   <link rel="stylesheet" href="lib/css/dark.css">
   <link rel="stylesheet" href="lib/css/light.css">
 ```
 You can change transition by changing the reveal transition property in Reveal.initialize
+
 ```javascript
   Reveal.initialize({
   				transition:  'default', // default/cube/page/concave/zoom/linear/none
@@ -55,8 +58,9 @@ This repo contains a submodule for the GDI version of the
 framework. You will need to clone this repo, and then initialize the
 reveal submodule and fetch its contents with the following three
 terminal commands.
+
 ```
-git clone git@github.com:gdidenver/gdi-denver-intro-html-css.git
+git clone git@github.com:gdidenver/jeffco-code-camp.git 
 git submodule init
 git submodule update
 ```
